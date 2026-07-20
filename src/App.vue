@@ -9,6 +9,7 @@ const navItems = [
   { path: '/jwt-decoder', label: 'JWT Decoder', hint: 'header · payload', icon: 'key' },
   { path: '/timestamp', label: 'Timestamp', hint: 'unix · human', icon: 'clock' },
   { path: '/uuid-generator', label: 'UUID Generator', hint: 'v4', icon: 'hash' },
+  { path: '/word-counter', label: 'Word & Char Counter', hint: 'words · chars · time', icon: 'text' },
 ]
 
 const icons = {
@@ -17,6 +18,7 @@ const icons = {
   key: 'M14.5 7.5a3.5 3.5 0 1 1-4.95 4.95L7 15v2H5v2H2v-3l6.55-6.55A3.5 3.5 0 0 1 14.5 7.5Zm0 0 1.5-1.5',
   clock: 'M12 7v5l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z',
   hash: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
+  text: 'M4 6h16M4 12h10M4 18h13',
 }
 </script>
 

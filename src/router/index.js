@@ -35,6 +35,12 @@ const routes = [
     component: () => import('../components/UuidGenerator.vue'),
     meta: { label: 'UUID Generator', icon: 'hash' },
   },
+  {
+    path: '/word-counter',
+    name: 'word-counter',
+    component: () => import('../components/WordCharCounter.vue'),
+    meta: { label: 'Word & Char Counter', icon: 'text' },
+  },
 ]
 
 const router = createRouter({
