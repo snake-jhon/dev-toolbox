@@ -2,7 +2,7 @@
 
 A minimal, client-side toolbox of everyday developer utilities. No backend required — everything runs in your browser.
 
-**Live app:** https://snake-jhon.github.io/dev-toolbox/
+**Live app:** https://snake-jhon.github.io/dev-toolbox
 
 ## Tools
 
