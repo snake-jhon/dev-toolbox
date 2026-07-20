@@ -1,1 +1,66 @@
-"# Dev Toolbox\n\nA minimal, client-side toolbox of everyday developer utilities. No backend required \u2014 everything runs in your browser.\n\n**Live app:** https://snake-jhon.github.io/dev-toolbox/\n\n## Tools\n\n- **JSON Formatter / Validator** \u2014 pretty-print JSON and surface syntax errors with line/column info.\n- **Base64 & URL Encoder/Decoder** \u2014 toggle between encode and decode for both Base64 and URI components.\n- **JWT Decoder** \u2014 decode a JWT's header and payload (signature is shown but not verified).\n- **Unix Timestamp Converter** \u2014 convert between Unix time and human-readable dates, local and UTC.\n- **UUID Generator** \u2014 generate RFC 4122 v4 UUIDs with one-click copy.\n\nEvery tool works entirely client-side: no data is sent to a server, and no external APIs are called.\n\n## Tech stack\n\n- [Vue 3](https://vuejs.org/) (Composition API, `<script setup>`)\n- [Vite](https://vitejs.dev/)\n- [Vue Router](https://router.vuejs.org/) (hash history, so each tool has its own shareable URL)\n- Plain CSS (no UI framework)\n\n## Local development\n\n```bash\n# install dependencies\nnpm install\n\n# start the dev server\nnpm run dev\n\n# type-check & build for production\nnpm run build\n\n# preview the production build locally\nnpm run preview\n```\n\n## Deployment\n\nThe app is deployed automatically to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`. The workflow builds the Vite app and publishes the `dist/` output using `actions/deploy-pages`.\n\n`vite.config.js` sets `base: '/dev-toolbox/'` so built asset URLs resolve correctly under the repository's Pages path.\n\n## Project structure\n\n```\nsrc/\n  components/       # one component per tool\n    CopyButton.vue\n    JsonFormatter.vue\n    Base64UrlEncoder.vue\n    JwtDecoder.vue\n    TimestampConverter.vue\n    UuidGenerator.vue\n  router/\n    index.js         # route -> tool mapping\n  App.vue             # sidebar/tab shell\n  main.js\n  style.css           # shared design tokens & utility classes\n```\n\n## License\n\nMIT\n"
+# Dev Toolbox
+
+A minimal, client-side toolbox of everyday developer utilities. No backend required — everything runs in your browser.
+
+**Live app:** https://snake-jhon.github.io/dev-toolbox/
+
+## Tools
+
+- **JSON Formatter / Validator** — pretty-print JSON and surface syntax errors with line/column info.
+- **Base64 & URL Encoder/Decoder** — toggle between encode and decode for both Base64 and URI components.
+- **JWT Decoder** — decode a JWT's header and payload (signature is shown but not verified).
+- **Unix Timestamp Converter** — convert between Unix time and human-readable dates, local and UTC.
+- **UUID Generator** — generate RFC 4122 v4 UUIDs with one-click copy.
+
+Every tool works entirely client-side: no data is sent to a server, and no external APIs are called.
+
+## Tech stack
+
+- [Vue 3](https://vuejs.org/) (Composition API, `<script setup>`)
+- [Vite](https://vitejs.dev/)
+- [Vue Router](https://router.vuejs.org/) (hash history, so each tool has its own shareable URL)
+- Plain CSS (no UI framework)
+
+## Local development
+
+```bash
+# install dependencies
+npm install
+
+# start the dev server
+npm run dev
+
+# type-check & build for production
+npm run build
+
+# preview the production build locally
+npm run preview
+```
+
+## Deployment
+
+The app is deployed automatically to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`. The workflow builds the Vite app and publishes the `dist/` output using `actions/deploy-pages`.
+
+`vite.config.js` sets `base: '/dev-toolbox/'` so built asset URLs resolve correctly under the repository's Pages path.
+
+## Project structure
+
+```
+src/
+  components/       # one component per tool
+    CopyButton.vue
+    JsonFormatter.vue
+    Base64UrlEncoder.vue
+    JwtDecoder.vue
+    TimestampConverter.vue
+    UuidGenerator.vue
+  router/
+    index.js         # route -> tool mapping
+  App.vue             # sidebar/tab shell
+  main.js
+  style.css           # shared design tokens & utility classes
+```
+
+## License
+
+MIT
