@@ -28,7 +28,7 @@ const icons = {
           <rect width="32" height="32" rx="7" fill="#1b1e25" />
           <path
             d="M21.5 8.5a5 5 0 0 0-6.8 5.8l-7.4 7.4a2 2 0 0 0 2.8 2.8l7.4-7.4a5 5 0 0 0 5.8-6.8l-3.1 3.1-2.3-2.3 3.1-3.1z"
-            fill="#e8a33d"
+            fill="#e5484d"
           />
         </svg>
         <div class="brand-text">
