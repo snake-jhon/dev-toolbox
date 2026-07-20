@@ -8,9 +8,9 @@
   --text-primary: #e7e9ee;
   --text-muted: #8b93a1;
   --text-faint: #5c6472;
-  --accent: #e8a33d;
-  --accent-dim: #b98332;
-  --accent-soft: rgba(232, 163, 61, 0.12);
+  --accent: #e5484d;
+  --accent-dim: #b8393e;
+  --accent-soft: rgba(229, 72, 77, 0.14);
   --ok: #4fd1a5;
   --ok-soft: rgba(79, 209, 165, 0.12);
   --err: #ef6461;
@@ -176,13 +176,13 @@ select:focus-visible,
 .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #17140d;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: #f0ae4d;
-  color: #17140d;
+  background: #ef6b6f;
+  color: #ffffff;
 }
 
 .btn-sm {
@@ -262,7 +262,7 @@ textarea.code-area {
 
 .chip-toggle button.active {
   background: var(--accent);
-  color: #17140d;
+  color: #ffffff;
   font-weight: 600;
 }
 
