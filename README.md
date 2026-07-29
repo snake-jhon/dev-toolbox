@@ -11,6 +11,7 @@ A minimal, client-side toolbox of everyday developer utilities. No backend requi
 - **JWT Decoder** — decode a JWT's header and payload (signature is shown but not verified).
 - **Unix Timestamp Converter** — convert between Unix time and human-readable dates, local and UTC.
 - **UUID Generator** — generate RFC 4122 v4 UUIDs with one-click copy.
+- **Word & Character Counter** — live word, character, sentence, and paragraph counts, plus estimated reading time.
 
 Every tool works entirely client-side: no data is sent to a server, and no external APIs are called.
 
@@ -54,6 +55,7 @@ src/
     JwtDecoder.vue
     TimestampConverter.vue
     UuidGenerator.vue
+    WordCharCounter.vue
   router/
     index.js         # route -> tool mapping
   App.vue             # sidebar/tab shell
