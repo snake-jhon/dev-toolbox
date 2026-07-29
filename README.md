@@ -13,6 +13,7 @@ A minimal, client-side toolbox of everyday developer utilities. No backend requi
 - **UUID Generator** — generate RFC 4122 v4 UUIDs with one-click copy.
 - **Word & Character Counter** — live word, character, sentence, and paragraph counts, plus estimated reading time.
 - **Regex Tester** — test patterns against sample text with live match highlighting, capture groups, and a replace preview.
+- **Markdown Previewer** — side-by-side Markdown editor and live-rendered HTML preview.
 
 Every tool works entirely client-side: no data is sent to a server, and no external APIs are called.
 
@@ -21,6 +22,7 @@ Every tool works entirely client-side: no data is sent to a server, and no exter
 - [Vue 3](https://vuejs.org/) (Composition API, `<script setup>`)
 - [Vite](https://vitejs.dev/)
 - [Vue Router](https://router.vuejs.org/) (hash history, so each tool has its own shareable URL)
+- [marked](https://marked.js.org/) + [DOMPurify](https://github.com/cure53/DOMPurify) for the Markdown previewer
 - Plain CSS (no UI framework)
 
 ## Local development
@@ -58,6 +60,7 @@ src/
     UuidGenerator.vue
     WordCharCounter.vue
     RegexTester.vue
+    MarkdownPreviewer.vue
   router/
     index.js         # route -> tool mapping
   App.vue             # sidebar/tab shell
