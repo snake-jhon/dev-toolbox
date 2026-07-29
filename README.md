@@ -12,6 +12,7 @@ A minimal, client-side toolbox of everyday developer utilities. No backend requi
 - **Unix Timestamp Converter** — convert between Unix time and human-readable dates, local and UTC.
 - **UUID Generator** — generate RFC 4122 v4 UUIDs with one-click copy.
 - **Word & Character Counter** — live word, character, sentence, and paragraph counts, plus estimated reading time.
+- **Regex Tester** — test patterns against sample text with live match highlighting, capture groups, and a replace preview.
 
 Every tool works entirely client-side: no data is sent to a server, and no external APIs are called.
 
@@ -56,6 +57,7 @@ src/
     TimestampConverter.vue
     UuidGenerator.vue
     WordCharCounter.vue
+    RegexTester.vue
   router/
     index.js         # route -> tool mapping
   App.vue             # sidebar/tab shell
