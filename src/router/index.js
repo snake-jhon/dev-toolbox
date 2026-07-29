@@ -47,6 +47,12 @@ const routes = [
     component: () => import('../components/RegexTester.vue'),
     meta: { label: 'Regex Tester', icon: 'regex' },
   },
+  {
+    path: '/markdown-previewer',
+    name: 'markdown-previewer',
+    component: () => import('../components/MarkdownPreviewer.vue'),
+    meta: { label: 'Markdown Previewer', icon: 'markdown' },
+  },
 ]
 
 const router = createRouter({
