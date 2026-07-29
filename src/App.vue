@@ -11,6 +11,7 @@ const navItems = [
   { path: '/uuid-generator', label: 'UUID Generator', hint: 'v4', icon: 'hash' },
   { path: '/word-counter', label: 'Word & Char Counter', hint: 'words · chars · time', icon: 'text' },
   { path: '/regex-tester', label: 'Regex Tester', hint: 'match · replace', icon: 'regex' },
+  { path: '/markdown-previewer', label: 'Markdown Previewer', hint: 'md · html', icon: 'markdown' },
 ]
 
 const icons = {
@@ -21,6 +22,7 @@ const icons = {
   hash: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
   text: 'M4 6h16M4 12h10M4 18h13',
   regex: 'M6 4v16M12 4l4 4-4 4 4 4-4 4M18 8v8',
+  markdown: 'M4 6h16v12H4zM7 15V9l3 3 3-3v6M17 9v6m-2.5-2.5L17 15l2.5-2.5',
 }
 </script>
 
