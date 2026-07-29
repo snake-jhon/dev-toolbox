@@ -193,8 +193,8 @@ const icons = {
 }
 
 .main {
-  padding: 36px 40px;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 @media (max-width: 860px) {
@@ -236,7 +236,8 @@ const icons = {
   }
 
   .main {
-    padding: 24px 18px;
+    height: auto;
+    overflow: visible;
   }
 }
 </style>
