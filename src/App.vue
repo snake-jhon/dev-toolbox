@@ -10,6 +10,7 @@ const navItems = [
   { path: '/timestamp', label: 'Timestamp', hint: 'unix · human', icon: 'clock' },
   { path: '/uuid-generator', label: 'UUID Generator', hint: 'v4', icon: 'hash' },
   { path: '/word-counter', label: 'Word & Char Counter', hint: 'words · chars · time', icon: 'text' },
+  { path: '/regex-tester', label: 'Regex Tester', hint: 'match · replace', icon: 'regex' },
 ]
 
 const icons = {
@@ -19,6 +20,7 @@ const icons = {
   clock: 'M12 7v5l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z',
   hash: 'M4 9h16M4 15h16M10 3 8 21M16 3l-2 18',
   text: 'M4 6h16M4 12h10M4 18h13',
+  regex: 'M6 4v16M12 4l4 4-4 4 4 4-4 4M18 8v8',
 }
 </script>
 
