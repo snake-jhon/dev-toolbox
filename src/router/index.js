@@ -41,6 +41,12 @@ const routes = [
     component: () => import('../components/WordCharCounter.vue'),
     meta: { label: 'Word & Char Counter', icon: 'text' },
   },
+  {
+    path: '/regex-tester',
+    name: 'regex-tester',
+    component: () => import('../components/RegexTester.vue'),
+    meta: { label: 'Regex Tester', icon: 'regex' },
+  },
 ]
 
 const router = createRouter({
