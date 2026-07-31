@@ -75,16 +75,18 @@ function useNow() {
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">04 · Convert</span>
-      <h2>Unix Timestamp Converter</h2>
-      <p>Convert between Unix time and human-readable dates, in both local time and UTC.</p>
-    </div>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">04 · Convert</span>
+        <h2>Unix Timestamp Converter</h2>
+        <p>Convert between Unix time and human-readable dates, in both local time and UTC.</p>
+      </div>
 
-    <div class="panel row" style="justify-content: space-between">
-      <span class="field-label" style="margin: 0">Current time</span>
-      <div style="font-family: var(--mono); font-size: 13px">
-        {{ now }} <span style="color: var(--text-faint)">·</span> {{ formatLocal(new Date(now * 1000)) }}
+      <div class="panel row pinned-controls" style="justify-content: space-between">
+        <span class="field-label" style="margin: 0">Current time</span>
+        <div style="font-family: var(--mono); font-size: 13px">
+          {{ now }} <span style="color: var(--text-faint)">·</span> {{ formatLocal(new Date(now * 1000)) }}
+        </div>
       </div>
     </div>
 

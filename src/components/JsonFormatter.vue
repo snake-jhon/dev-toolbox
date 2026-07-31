@@ -62,10 +62,12 @@ function loadSample() {
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">01 · Validate</span>
-      <h2>JSON Formatter &amp; Validator</h2>
-      <p>Paste JSON to pretty-print it and check for syntax errors. Nothing leaves your browser.</p>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">01 · Validate</span>
+        <h2>JSON Formatter &amp; Validator</h2>
+        <p>Paste JSON to pretty-print it and check for syntax errors. Nothing leaves your browser.</p>
+      </div>
     </div>
 
     <div class="grid-2">

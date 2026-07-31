@@ -109,39 +109,41 @@ function clear() {
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">07 · Test</span>
-      <h2>Regex Tester</h2>
-      <p>Build and test regular expressions against sample text, with live match highlighting and replace preview.</p>
-    </div>
-
-    <div>
-      <span class="field-label">Pattern</span>
-      <div class="row">
-        <span style="font-family: var(--mono); color: var(--text-faint)">/</span>
-        <input v-model="pattern" type="text" placeholder="\\w+@\\w+\\.\\w+" style="flex: 1" spellcheck="false" />
-        <span style="font-family: var(--mono); color: var(--text-faint)">/{{ flagsString }}</span>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">07 · Test</span>
+        <h2>Regex Tester</h2>
+        <p>Build and test regular expressions against sample text, with live match highlighting and replace preview.</p>
       </div>
-      <div class="row" style="margin-top: 10px">
-        <button
-          v-for="flag in flagOptions"
-          :key="flag.key"
-          class="btn btn-sm"
-          type="button"
-          :class="{ 'btn-primary': activeFlags.has(flag.key) }"
-          :title="flag.title"
-          @click="toggleFlag(flag.key)"
-        >
-          {{ flag.label }}
-        </button>
-        <button class="btn btn-sm" type="button" style="margin-left: auto" @click="loadSample">Load sample</button>
-        <button class="btn btn-sm" type="button" @click="clear">Clear</button>
-      </div>
-    </div>
 
-    <div v-if="regexResult.ok === false" class="status-line err">✕ Invalid pattern: {{ regexResult.error }}</div>
-    <div v-else-if="regexResult.ok === true" class="status-line ok">
-      ✓ Valid pattern · {{ matches.length }} match{{ matches.length === 1 ? '' : 'es' }}
+      <div class="pinned-controls">
+        <span class="field-label">Pattern</span>
+        <div class="row">
+          <span style="font-family: var(--mono); color: var(--text-faint)">/</span>
+          <input v-model="pattern" type="text" placeholder="\\w+@\\w+\\.\\w+" style="flex: 1" spellcheck="false" />
+          <span style="font-family: var(--mono); color: var(--text-faint)">/{{ flagsString }}</span>
+        </div>
+        <div class="row" style="margin-top: 10px">
+          <button
+            v-for="flag in flagOptions"
+            :key="flag.key"
+            class="btn btn-sm"
+            type="button"
+            :class="{ 'btn-primary': activeFlags.has(flag.key) }"
+            :title="flag.title"
+            @click="toggleFlag(flag.key)"
+          >
+            {{ flag.label }}
+          </button>
+          <button class="btn btn-sm" type="button" style="margin-left: auto" @click="loadSample">Load sample</button>
+          <button class="btn btn-sm" type="button" @click="clear">Clear</button>
+        </div>
+      </div>
+
+      <div v-if="regexResult.ok === false" class="status-line err pinned-controls">✕ Invalid pattern: {{ regexResult.error }}</div>
+      <div v-else-if="regexResult.ok === true" class="status-line ok pinned-controls">
+        ✓ Valid pattern · {{ matches.length }} match{{ matches.length === 1 ? '' : 'es' }}
+      </div>
     </div>
 
     <div>

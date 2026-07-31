@@ -82,10 +82,12 @@ const summaryText = computed(() =>
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">06 · Measure</span>
-      <h2>Word &amp; Character Counter</h2>
-      <p>Paste or type text to see live word, character, sentence, and reading-time stats.</p>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">06 · Measure</span>
+        <h2>Word &amp; Character Counter</h2>
+        <p>Paste or type text to see live word, character, sentence, and reading-time stats.</p>
+      </div>
     </div>
 
     <div>

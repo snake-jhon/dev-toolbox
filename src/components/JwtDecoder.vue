@@ -65,10 +65,12 @@ function clear() {
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">03 · Inspect</span>
-      <h2>JWT Decoder</h2>
-      <p>Decode the header and payload of a JSON Web Token. Signature is shown but not verified.</p>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">03 · Inspect</span>
+        <h2>JWT Decoder</h2>
+        <p>Decode the header and payload of a JSON Web Token. Signature is shown but not verified.</p>
+      </div>
     </div>
 
     <div>

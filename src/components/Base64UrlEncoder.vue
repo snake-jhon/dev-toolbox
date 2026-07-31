@@ -46,25 +46,27 @@ function clear() {
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">02 · Transform</span>
-      <h2>Base64 &amp; URL Encoder / Decoder</h2>
-      <p>Switch encoding type and direction, then paste text to transform it instantly.</p>
-    </div>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">02 · Transform</span>
+        <h2>Base64 &amp; URL Encoder / Decoder</h2>
+        <p>Switch encoding type and direction, then paste text to transform it instantly.</p>
+      </div>
 
-    <div class="row">
-      <div class="chip-toggle">
-        <button type="button" :class="{ active: mode === 'base64' }" @click="mode = 'base64'">Base64</button>
-        <button type="button" :class="{ active: mode === 'url' }" @click="mode = 'url'">URL</button>
+      <div class="row pinned-controls">
+        <div class="chip-toggle">
+          <button type="button" :class="{ active: mode === 'base64' }" @click="mode = 'base64'">Base64</button>
+          <button type="button" :class="{ active: mode === 'url' }" @click="mode = 'url'">URL</button>
+        </div>
+        <div class="chip-toggle">
+          <button type="button" :class="{ active: direction === 'encode' }" @click="direction = 'encode'">Encode</button>
+          <button type="button" :class="{ active: direction === 'decode' }" @click="direction = 'decode'">Decode</button>
+        </div>
+        <button class="btn btn-sm" type="button" @click="swap" :disabled="result.ok !== true">
+          Use output as input &amp; flip
+        </button>
+        <button class="btn btn-sm" type="button" @click="clear">Clear</button>
       </div>
-      <div class="chip-toggle">
-        <button type="button" :class="{ active: direction === 'encode' }" @click="direction = 'encode'">Encode</button>
-        <button type="button" :class="{ active: direction === 'decode' }" @click="direction = 'decode'">Decode</button>
-      </div>
-      <button class="btn btn-sm" type="button" @click="swap" :disabled="result.ok !== true">
-        Use output as input &amp; flip
-      </button>
-      <button class="btn btn-sm" type="button" @click="clear">Clear</button>
     </div>
 
     <div class="grid-2">

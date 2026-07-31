@@ -52,16 +52,18 @@ function greet(name) {
 
 <template>
   <section class="tool" style="max-width: none">
-    <div class="tool-header">
-      <span class="eyebrow">08 · Preview</span>
-      <h2>Markdown Previewer</h2>
-      <p>Write or paste Markdown on the left and see the rendered HTML update live on the right.</p>
-    </div>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">08 · Preview</span>
+        <h2>Markdown Previewer</h2>
+        <p>Write or paste Markdown on the left and see the rendered HTML update live on the right.</p>
+      </div>
 
-    <div class="row">
-      <button class="btn btn-sm" type="button" @click="loadSample">Load sample</button>
-      <button class="btn btn-sm" type="button" @click="clear">Clear</button>
-      <CopyButton :text="renderedHtml" label="Copy rendered HTML" />
+      <div class="row pinned-controls">
+        <button class="btn btn-sm" type="button" @click="loadSample">Load sample</button>
+        <button class="btn btn-sm" type="button" @click="clear">Clear</button>
+        <CopyButton :text="renderedHtml" label="Copy rendered HTML" />
+      </div>
     </div>
 
     <div class="split">

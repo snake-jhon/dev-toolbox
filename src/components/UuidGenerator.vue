@@ -35,26 +35,28 @@ const allText = () => list.value.map(format).join('\n')
 
 <template>
   <section class="tool">
-    <div class="tool-header">
-      <span class="eyebrow">05 · Generate</span>
-      <h2>UUID Generator</h2>
-      <p>Generate RFC 4122 version 4 UUIDs using your browser's cryptographically secure random source.</p>
-    </div>
+    <div class="tool-pinned">
+      <div class="tool-header">
+        <span class="eyebrow">05 · Generate</span>
+        <h2>UUID Generator</h2>
+        <p>Generate RFC 4122 version 4 UUIDs using your browser's cryptographically secure random source.</p>
+      </div>
 
-    <div class="row">
-      <label class="row" style="gap: 6px; font-size: 12.5px; color: var(--text-faint)">
-        Count
-        <input v-model="count" type="number" min="1" max="100" style="width: 70px" />
-      </label>
-      <div class="chip-toggle">
-        <button type="button" :class="{ active: hyphens }" @click="hyphens = true">with hyphens</button>
-        <button type="button" :class="{ active: !hyphens }" @click="hyphens = false">no hyphens</button>
+      <div class="row pinned-controls">
+        <label class="row" style="gap: 6px; font-size: 12.5px; color: var(--text-faint)">
+          Count
+          <input v-model="count" type="number" min="1" max="100" style="width: 70px" />
+        </label>
+        <div class="chip-toggle">
+          <button type="button" :class="{ active: hyphens }" @click="hyphens = true">with hyphens</button>
+          <button type="button" :class="{ active: !hyphens }" @click="hyphens = false">no hyphens</button>
+        </div>
+        <div class="chip-toggle">
+          <button type="button" :class="{ active: !uppercase }" @click="uppercase = false">lowercase</button>
+          <button type="button" :class="{ active: uppercase }" @click="uppercase = true">UPPERCASE</button>
+        </div>
+        <button class="btn btn-primary btn-sm" type="button" @click="regenerate">Generate</button>
       </div>
-      <div class="chip-toggle">
-        <button type="button" :class="{ active: !uppercase }" @click="uppercase = false">lowercase</button>
-        <button type="button" :class="{ active: uppercase }" @click="uppercase = true">UPPERCASE</button>
-      </div>
-      <button class="btn btn-primary btn-sm" type="button" @click="regenerate">Generate</button>
     </div>
 
     <div class="panel">
