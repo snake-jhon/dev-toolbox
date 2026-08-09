@@ -53,6 +53,18 @@ const routes = [
     component: () => import('../components/MarkdownPreviewer.vue'),
     meta: { label: 'Markdown Previewer', icon: 'markdown' },
   },
+  {
+    path: '/diff-checker',
+    name: 'diff-checker',
+    component: () => import('../components/DiffChecker.vue'),
+    meta: { label: 'Diff Checker', icon: 'diff' },
+  },
+  {
+    path: '/qr-code-generator',
+    name: 'qr-code-generator',
+    component: () => import('../components/QrCodeGenerator.vue'),
+    meta: { label: 'QR Code Generator', icon: 'qr' },
+  },
 ]
 
 const router = createRouter({
