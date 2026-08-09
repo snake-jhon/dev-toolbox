@@ -12,6 +12,8 @@ const navItems = [
   { path: '/word-counter', label: 'Word & Char Counter', hint: 'words · chars · time', icon: 'text' },
   { path: '/regex-tester', label: 'Regex Tester', hint: 'match · replace', icon: 'regex' },
   { path: '/markdown-previewer', label: 'Markdown Previewer', hint: 'md · html', icon: 'markdown' },
+  { path: '/diff-checker', label: 'Diff Checker', hint: 'compare · highlight', icon: 'diff' },
+  { path: '/qr-code-generator', label: 'QR Code Generator', hint: 'text · url', icon: 'qr' },
 ]
 
 const icons = {
@@ -23,6 +25,8 @@ const icons = {
   text: 'M4 6h16M4 12h10M4 18h13',
   regex: 'M6 4v16M12 4l4 4-4 4 4 4-4 4M18 8v8',
   markdown: 'M4 6h16v12H4zM7 15V9l3 3 3-3v6M17 9v6m-2.5-2.5L17 15l2.5-2.5',
+  diff: 'M9 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h4M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M9 9h6M9 15h6M12 6v3m0 6v3',
+  qr: 'M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z',
 }
 </script>
 
