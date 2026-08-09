@@ -151,7 +151,7 @@ function clear() {
       <textarea
         v-model="testString"
         class="code-area"
-        style="min-height: 140px"
+        style="min-height: 220px"
         spellcheck="false"
         placeholder="Paste text to test against your pattern"
       ></textarea>
@@ -186,7 +186,7 @@ function clear() {
       </div>
       <textarea
         class="code-area"
-        style="min-height: 100px; margin-top: 10px"
+        style="min-height: 160px; margin-top: 10px"
         readonly
         spellcheck="false"
         :value="replaced.output"

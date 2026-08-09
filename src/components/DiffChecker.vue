@@ -117,11 +117,11 @@ function loadSample() {
     <div class="grid-2">
       <div>
         <span class="field-label">Original</span>
-        <textarea v-model="original" class="code-area" style="min-height: 180px" spellcheck="false" placeholder="Paste original text here"></textarea>
+        <textarea v-model="original" class="code-area" style="min-height: 300px" spellcheck="false" placeholder="Paste original text here"></textarea>
       </div>
       <div>
         <span class="field-label">Changed</span>
-        <textarea v-model="changed" class="code-area" style="min-height: 180px" spellcheck="false" placeholder="Paste changed text here"></textarea>
+        <textarea v-model="changed" class="code-area" style="min-height: 300px" spellcheck="false" placeholder="Paste changed text here"></textarea>
       </div>
     </div>
 

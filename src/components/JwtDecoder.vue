@@ -78,7 +78,7 @@ function clear() {
       <textarea
         v-model="input"
         class="code-area"
-        style="min-height: 100px"
+        style="min-height: 180px"
         spellcheck="false"
         placeholder="eyJhbGciOiJIUzI1NiIs..."
       ></textarea>
@@ -94,14 +94,14 @@ function clear() {
       <div class="grid-2">
         <div>
           <span class="field-label">Header</span>
-          <textarea class="code-area" style="min-height: 140px" readonly :value="headerJson"></textarea>
+          <textarea class="code-area" style="min-height: 240px" readonly :value="headerJson"></textarea>
           <div class="row" style="margin-top: 10px">
             <CopyButton :text="headerJson" label="Copy header" />
           </div>
         </div>
         <div>
           <span class="field-label">Payload</span>
-          <textarea class="code-area" style="min-height: 140px" readonly :value="payloadJson"></textarea>
+          <textarea class="code-area" style="min-height: 240px" readonly :value="payloadJson"></textarea>
           <div class="row" style="margin-top: 10px">
             <CopyButton :text="payloadJson" label="Copy payload" />
           </div>

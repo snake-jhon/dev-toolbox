@@ -89,7 +89,7 @@ function clear() {
     <div class="grid-2">
       <div>
         <span class="field-label">Text or URL</span>
-        <textarea v-model="text" class="code-area" style="min-height: 110px" spellcheck="false" placeholder="https://example.com"></textarea>
+        <textarea v-model="text" class="code-area" style="min-height: 140px" spellcheck="false" placeholder="https://example.com"></textarea>
 
         <div class="panel" style="margin-top: 16px">
           <span class="field-label">Options</span>

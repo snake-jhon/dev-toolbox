@@ -95,7 +95,7 @@ const summaryText = computed(() =>
       <textarea
         v-model="input"
         class="code-area"
-        style="min-height: 260px"
+        style="min-height: 380px"
         spellcheck="false"
         placeholder="Paste or type text here"
       ></textarea>

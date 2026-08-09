@@ -51,7 +51,7 @@ function greet(name) {
 </script>
 
 <template>
-  <section class="tool" style="max-width: none">
+  <section class="tool">
     <div class="tool-pinned">
       <div class="tool-header">
         <span class="eyebrow">08 · Preview</span>
@@ -102,7 +102,7 @@ function greet(name) {
 }
 
 .split-area {
-  min-height: 420px;
+  min-height: 480px;
 }
 
 .pane {
