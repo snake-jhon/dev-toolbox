@@ -14,6 +14,8 @@ A minimal, client-side toolbox of everyday developer utilities. No backend requi
 - **Word & Character Counter** — live word, character, sentence, and paragraph counts, plus estimated reading time.
 - **Regex Tester** — test patterns against sample text with live match highlighting, capture groups, and a replace preview.
 - **Markdown Previewer** — side-by-side Markdown editor and live-rendered HTML preview.
+- **Diff Checker** — line-by-line comparison of two blocks of text, with word-level highlighting inside changed lines.
+- **QR Code Generator** — turn any text or URL into a downloadable PNG/SVG QR code.
 
 Every tool works entirely client-side: no data is sent to a server, and no external APIs are called.
 
@@ -23,6 +25,8 @@ Every tool works entirely client-side: no data is sent to a server, and no exter
 - [Vite](https://vitejs.dev/)
 - [Vue Router](https://router.vuejs.org/) (hash history, so each tool has its own shareable URL)
 - [marked](https://marked.js.org/) + [DOMPurify](https://github.com/cure53/DOMPurify) for the Markdown previewer
+- [diff](https://github.com/kpdecker/jsdiff) for the Diff Checker
+- [qrcode](https://github.com/soldair/node-qrcode) for the QR Code Generator
 - Plain CSS (no UI framework)
 
 ## Local development
@@ -61,6 +65,8 @@ src/
     WordCharCounter.vue
     RegexTester.vue
     MarkdownPreviewer.vue
+    DiffChecker.vue
+    QrCodeGenerator.vue
   router/
     index.js         # route -> tool mapping
   App.vue             # sidebar/tab shell
