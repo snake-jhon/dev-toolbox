@@ -16,6 +16,7 @@ A minimal, client-side toolbox of everyday developer utilities. No backend requi
 - **Markdown Previewer** — side-by-side Markdown editor and live-rendered HTML preview.
 - **Diff Checker** — line-by-line comparison of two blocks of text, with word-level highlighting inside changed lines.
 - **QR Code Generator** — turn any text or URL into a downloadable PNG/SVG QR code.
+- **Color Converter** — convert between HEX, RGB, and HSL (accepts CSS named colors too), with a WCAG contrast checker.
 
 Every tool works entirely client-side: no data is sent to a server, and no external APIs are called.
 
@@ -67,6 +68,7 @@ src/
     MarkdownPreviewer.vue
     DiffChecker.vue
     QrCodeGenerator.vue
+    ColorConverter.vue
   router/
     index.js         # route -> tool mapping
   App.vue             # sidebar/tab shell
