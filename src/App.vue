@@ -14,6 +14,7 @@ const navItems = [
   { path: '/markdown-previewer', label: 'Markdown Previewer', hint: 'md · html', icon: 'markdown' },
   { path: '/diff-checker', label: 'Diff Checker', hint: 'compare · highlight', icon: 'diff' },
   { path: '/qr-code-generator', label: 'QR Code Generator', hint: 'text · url', icon: 'qr' },
+  { path: '/color-converter', label: 'Color Converter', hint: 'hex · rgb · hsl', icon: 'color' },
 ]
 
 const icons = {
@@ -27,6 +28,7 @@ const icons = {
   markdown: 'M4 6h16v12H4zM7 15V9l3 3 3-3v6M17 9v6m-2.5-2.5L17 15l2.5-2.5',
   diff: 'M9 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h4M15 4h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-4M9 9h6M9 15h6M12 6v3m0 6v3',
   qr: 'M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h2v2h-2zM18 14h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z',
+  color: 'M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h1.5c2 0 3.5-1.5 3.5-3.5C20 6.6 16.4 3 12 3ZM7 12a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm3-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm3 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z',
 }
 </script>
 
