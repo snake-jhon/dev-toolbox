@@ -65,6 +65,12 @@ const routes = [
     component: () => import('../components/QrCodeGenerator.vue'),
     meta: { label: 'QR Code Generator', icon: 'qr' },
   },
+  {
+    path: '/color-converter',
+    name: 'color-converter',
+    component: () => import('../components/ColorConverter.vue'),
+    meta: { label: 'Color Converter', icon: 'color' },
+  },
 ]
 
 const router = createRouter({
